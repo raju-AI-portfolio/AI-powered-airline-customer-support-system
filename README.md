@@ -459,5 +459,6 @@ For a mid-size airline:
 | Agent workload | ↓ 60% |
 
 ---
-<img width="1600" height="603" alt="image" src="https://github.com/user-attachments/assets/79ca5c11-def9-4c83-b645-114130c827e9" />
+<img width="2402" height="890" alt="image" src="https://github.com/user-attachments/assets/b15a2eed-a849-45e8-a136-9dc9e288387f" />
+
 
