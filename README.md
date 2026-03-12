@@ -104,6 +104,33 @@ Policy-related questions retrieve answers from airline documentation using **vec
 
 The entire AI pipeline is orchestrated using **n8n workflows**.
 
+flowchart TD
+
+A[User / Passenger] --> B[Chat Interface or Web App]
+
+B --> C[n8n Workflow Trigger]
+
+C --> D[Input Guardrails]
+D --> E[Query Classifier LLM]
+
+E -->|Flight Query| F[SQL Agent]
+E -->|Policy Query| G[RAG Retrieval]
+E -->|General Query| H[LLM Direct Response]
+
+F --> I[PostgreSQL Flight Database]
+
+G --> J[Vector Database]
+J --> K[Airline Policy Documents]
+
+I --> L[Response Generator LLM]
+J --> L
+H --> L
+
+L --> M[Output Guardrails]
+
+M --> N[Final Response]
+
+N --> A
 ---
 
 ## 5. AI Safety and Guardrails
@@ -459,21 +486,7 @@ For a mid-size airline:
 
 ---
 
-# 📁 Repository Structure
 
-```
-airline-customer-support-system
-│
-├── data
-│   └── Flights_Schedule.csv
-│
-├── database
-│   └── add_data_to_db.py
-│
-├── guardrails
-│   └── guardrails.py
-│
-├── workflows
 │   └── n8n_workflow.json
 │
 ├── README.md
