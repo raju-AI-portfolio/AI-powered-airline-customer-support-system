@@ -114,3 +114,28 @@ Input and output guardrails prevent:
 - Prompt injection
 - Hallucinated responses
 - Unauthorized data access
+
+## 🧠 Core AI Components
+
+| Component | Purpose |
+|-----------|---------|
+| LLM | Understand and generate responses |
+| PostgreSQL | Store flight data |
+| Vector Database (Pinecone) | Store airline knowledge base |
+| RAG | Retrieve relevant policy information |
+| Guardrails | Ensure safe and compliant AI responses |
+| n8n | Orchestrate workflow automation |
+
+---
+
+## 🧩 Technology Stack
+
+| Layer | Technology |
+|------|------------|
+| LLM | OpenAI GPT / Llama |
+| Workflow | n8n |
+| Database | PostgreSQL |
+| Vector Database | Pinecone |
+| Backend | Python |
+| Safety | LLM Guard |
+| Automation | GitHub Codespaces |
