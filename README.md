@@ -103,34 +103,7 @@ Policy-related questions retrieve answers from airline documentation using **vec
 ## 4. Workflow Automation
 
 The entire AI pipeline is orchestrated using **n8n workflows**.
-
-flowchart TD
-
-A[User / Passenger] --> B[Chat Interface or Web App]
-
-B --> C[n8n Workflow Trigger]
-
-C --> D[Input Guardrails]
-D --> E[Query Classifier LLM]
-
-E -->|Flight Query| F[SQL Agent]
-E -->|Policy Query| G[RAG Retrieval]
-E -->|General Query| H[LLM Direct Response]
-
-F --> I[PostgreSQL Flight Database]
-
-G --> J[Vector Database]
-J --> K[Airline Policy Documents]
-
-I --> L[Response Generator LLM]
-J --> L
-H --> L
-
-L --> M[Output Guardrails]
-
-M --> N[Final Response]
-
-N --> A
+<img width="1600" height="603" alt="image" src="https://github.com/user-attachments/assets/1e3f22d3-4814-4db4-8d8c-0168f5a5da07" />
 ---
 
 ## 5. AI Safety and Guardrails
