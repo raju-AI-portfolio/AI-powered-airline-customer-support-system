@@ -102,7 +102,8 @@ Policy-related questions retrieve answers from airline documentation using **vec
 
 ## 4. Workflow Automation
 
-The entire AI pipeline is orchestrated using **n8n workflows**.
+The entire AI pipeline is orchestrated using **n8n workflows**
+
 <img width="1600" height="603" alt="image" src="https://github.com/user-attachments/assets/1e3f22d3-4814-4db4-8d8c-0168f5a5da07" />
 ---
 
@@ -458,9 +459,5 @@ For a mid-size airline:
 | Agent workload | ↓ 60% |
 
 ---
+<img width="1600" height="603" alt="image" src="https://github.com/user-attachments/assets/79ca5c11-def9-4c83-b645-114130c827e9" />
 
-
-│   └── n8n_workflow.json
-│
-├── README.md
-```
